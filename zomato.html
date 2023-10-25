@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .navigation{
+            background-color: white;
+            left: 15%;
+            position: sticky;
+            top: 0;
+            left: 5%;
+            z-index: 10;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 80%;
+
+
+        }
+        
+        
+        .logo img{
+            height: 50px;
+            width: 200px;
+            transition: all 0.6s;
+        }
+        .logo img:hover{
+            border-bottom:5px solid crimson;
+
+        }
+        
+        .locationbar input{
+            /* background-color: chartreuse; */
+            height: 40px;
+            width: 200px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        select{
+            margin-left: 40px;
+            height: 40px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            font-size: 15px;
+            color: gray;
+            font-weight: 100;
+        }
+        
+     
+        .searchbar input{
+            /* background-color: chartreuse; */
+            height: 40px;
+            width: 350px;
+             border:2px solid gray;
+            border-radius: 5px;
+        }
+        .searchbar input::placeholder{
+            color: gray;
+            text-align: center;
+            font-size: 20px;
+        }
+       
+       .loginAndsignup a{
+            /* background-color: darkgoldenrod; */
+            text-decoration: none;
+            font-size: 15px;
+            padding: 10px;
+            margin-left: 60px;
+            transition: all 0.6s;
+       }
+       .loginAndsignup a:hover{
+        color: crimson;
+       }
+    
+    
+        .lsbar{
+            /* background-color: red; */
+            width: 70%;
+            display: flex;
+            
+        }
+        .lsbar input{
+            height: 40px;
+            width: 50%;
+        }
+        .lsbar a{
+            font-size: 40px;
+        }
+         
+        .serviceoptions{
+            /* background-color: blue; */
+            width: 80%;
+            height: 100px;
+            display: flex;
+            justify-content: start;
+            margin-left: 100px;
+        }
+        .comon{
+            /* background-color: green; */
+            width: 200px;
+            height: 100px;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            transition: all 0.6s;
+        }
+        .comon:hover{
+            
+            border-bottom: 5px solid crimson;
+        }
+        .so1 h1{
+           font-size: 25px; 
+           font-weight: 100;
+        }
+        .so2 h1{
+            
+             font-size: 25px; 
+           font-weight: 100;
+        }
+        .so3 h1{
+           
+             font-size: 25px; 
+           font-weight: 100;
+        }
+        
+
+        .comon img{
+            height: 40px;
+            width: 50px;
+            background-color: rgba(128, 128, 128, 0.198);
+            border: 1px solid rgba(128, 128, 128, 0.224);
+            border-radius: 50%;
+        }
+         .comon img:hover{
+            transform: scale(1.04,1.04);
+        }
+       .buttonset{
+        background-color:white;
+        margin-bottom: 30px;
+        margin-left: 90px;
+        height: 90px;
+        width: 100%;
+        position:sticky;
+        top: 2%;
+        z-index: 5;
+        
+       }
+       .buttonset button{
+
+        color: gray;
+        background-color: white;
+        font-size: 15px;
+        height: 40px;
+        width: 80px;
+        margin-top:50px;
+        border: 2px solid gray;
+        border-radius: 5px;
+        transition: all 1s;
+        
+
+     
+       }
+       
+       .buttonset button:hover{
+        color: black;
+        background-color: crimson;
+       }
+     
+
+        /* menu options section */
+
+
+
+    .menuoptions{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 400px;
+    }
+    .menuoptions h1{
+        margin-left: 100px;
+        
+        font-size: 40px;
+    }
+     
+    
+    .menuoptions-common{
+        height: 150px;
+        width: 150px;
+        background-color: burlywood;
+        float: left;
+        /* border: 2px solid black; */
+        border-radius: 50%;
+        position: relative;
+        top: 15%;
+        left:15%;
+        margin-left: 20px;
+        
+    }
+    .menuoptions-common img{
+
+        height:150px ;
+        width: 150px;
+        border: none;
+        border-radius: 50%;
+        transition: all 0.6s;
+    }
+     .menuoptions-common img:hover{
+        transition-delay: 0.5ms;
+    transform: rotate(45deg);
+        height:150px ;
+        width: 150px;
+        border: none;
+        border-radius: 50%;
+    }
+    .menuoptions-common h2{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+
+
+        /* BRAND OPTION SECTION */
+
+
+    .brandoptions{
+        /* background-color: green; */
+        width: 100%;
+        height: 400px;
+    }
+     .brandoptions h1{
+        position: relative;
+        top: 5%;
+        left: 8%;
+        font-size: 40px;
+    }
+    .brandoptions-common{
+        height: 150px;
+        width: 150px;
+        background-color: burlywood;
+        float: left;
+        /* border: 2px solid black; */
+        border-radius: 50%;
+        position: relative;
+        top: 15%;
+        left:15%;
+        margin-left: 20px;
+
+        
+    }
+    .brandoptions-common img{
+
+        height:150px ;
+        width: 150px;
+        border: none;
+        border-radius: 50%;
+        transition: all 0.6s;
+
+    }
+    .brandoptions-common img:hover{
+        
+        transform: scale(1.2,1.2);
+        height:150px ;
+        width: 150px;
+        border: none;
+        border-radius: 50%;
+    }
+    .brandoptions-common h2{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+        /* food option section or divisions */
+
+    .foodoptions{
+        height: 400px;
+        width: 100%;
+        /* background-color: coral; */
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .fooditem{
+        height: 300px;
+        width: 25%;
+        /* background-color: crimson; */
+        border-bottom:1px solid gray;
+        border-radius: 10px;
+        position: relative;
+        transition: all 0.6s;
+
+    }
+     .fooditem:hover{
+      
+        /* background-color: crimson; */
+        transform: scale(1.04,1.04);
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px gray;
+        position: relative;
+
+    }
+    .fooditem img{
+        width: 100%;
+        height: 70%;
+        border: none;
+        border-radius: 8px;
+    }
+    .fooditem h3{
+        color: black;
+        font-size: 30px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+     .fooditem h4{
+        background-color: green;
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        font-size: 15px;
+        top: 72%;
+        left: 85%;
+    }
+   #price{
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    position: absolute;
+    top: 80%;
+    left: 75%;
+   }
+   #time{
+    font-size: 12px;
+    font-weight: 100;
+    position: absolute;
+    left: 80%;
+    top: 90%;
+   }
+   .topbutton{
+    background-color: crimson;
+    height: 60px;
+    width: 60px;
+   
+    margin-left: 90%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    
+   }
+   .topbutton:hover{
+    background-color: rgba(220, 20, 60, 0.8);
+   }
+   .topbutton a{
+    font-size: 60px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+  
+}
+.footer{
+    height: 500px;
+    width: 100%;
+    background-color:gray;
+}
+    .footerhead{
+        height: 100px;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content:space-between;
+    }
+    .footer button{
+                height: 50px;
+                width: 150px;
+                color:gray;
+                font-weight: bold;
+                border: 1px gray;
+                border-radius: 5px;
+                position: relative;
+                top:10%;
+                right:5%
+    }
+    .specialdiv{
+        /* background-color: aqua; */
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sd ul{
+        list-style: none;
+    }
+ .subdiv1{
+        height: 300px;
+        width: 200px;
+        /* background-color:pink; */
+        float: left;
+    }
+    .subdiv2{
+        height: 300px;
+        width: 200px;
+        /* background-color: blue; */
+        float: left;
+    }
+    .subdiv3{
+        height: 300px;
+        width: 200px;
+        /* background-color: blueviolet; */
+        float: left;
+
+
+    }
+    .subdiv4{
+        height: 300px;
+        width: 200px;
+        /* background-color: orange; */
+        float: left;
+
+    }
+    .subdiv5{
+        height: 300px;
+        width: 200px;
+        /* background-color: indianred; */
+        float: left;
+
+    }
+    </style>
+</head>
+<body>
+            <!-- navabar -->
+
+            <div class="navigation">
+                <div class="logo">
+                    <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="">
+                </div>
+                <!-- <div class="locationbar"><input type="search" placeholder="📍KOLKATA"></div> -->
+                <div class="locationbar">
+                    <select name="" id=""><option value="">📍KOLKATA</option> <option value="">user current gps locaton</option></select>
+                </div>
+                <div class="searchbar"><input type="search" placeholder=" 🔍Search for restaurant Cusine and or dish"></div>
+                <div class="loginAndsignup"><a href="">LOGIN</a>
+                    <a href="">SIGN UP</a>
+                </div>
+            </div>
+        
+        <div class="serviceoptions">
+            <div class="comon so1">
+                <img src="	https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png" alt="">
+                    <h1>Delivery</h1>
+            </div>
+            <div class="comon so2">
+                <img src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png" alt="">
+                    <h1>Dining out</h1>
+
+            </div>
+            <div class="comon so3">
+                <img src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png" alt="">
+                    <h1>Night life</h1>
+
+            </div>
+        </div>
+
+        
+
+            <!-- buttonset -->
+
+        <div class="buttonset">
+            <button>Filter</button>
+            <button>Rating:4.0+</button>
+            <button>Pure Veg</button>
+            <button>Cusine</button>
+        </div>
+
+
+            <!-- menu options -->
+
+
+        <div class="menuoptions">
+                <h1>Inspiration for your first order</h1>
+            <div class="menuoptions-common m1"><img src="https://b.zmtcdn.com/data/o2_assets/f9d277eb1668d7abf9235302402b06001632716602.png" alt=""> 
+             <h2>dosa</h2>
+            </div>
+            <div class="menuoptions-common m2"><img src="https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png" alt="">
+                <h2>dosa</h2>
+            </div>
+            <div class="menuoptions-common m3"><img src="https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png" alt="">
+                <h2>dosa</h2>
+            </div>
+            <div class="menuoptions-common m4"><img src="https://b.zmtcdn.com/data/o2_assets/348a8b7fdafc56ba233c77113e7e3a491632716601.png" alt="">
+                <h2>dosa</h2>
+            </div>
+            <div class="menuoptions-common m5"><img src="https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png" alt="">
+                <h2>dosa</h2>
+            </div>
+            <div class="menuoptions-common m6"><img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="">
+                <h2>dosa</h2>
+            </div>
+        </div>
+
+        <div class="brandoptions">
+        <h1>Inspiration for your first order</h1>
+        <div class="brandoptions-common m1"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/3a58b67479fd290ff96996002438736e_1672389253.png?output-format=webp"
+                alt="">
+            <h2>dosa</h2>
+        </div>
+        <div class="brandoptions-common m2"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/560b209a689eefa9feb367b5d5604097_1611382952.png?output-format=webp"
+                alt="">
+            <h2>dosa</h2>
+        </div>
+        <div class="brandoptions-common m3"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/b5068f3dfc0118b7b8a3cd0429ac953f_1696570852.png?output-format=webp"
+                alt="">
+            <h2>dosa</h2>
+        </div>
+        <div class="brandoptions-common m4"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/fe5db95ae85292933996d4043f600d3b_1611320738.png?output-format=webp"
+                alt="">
+            <h2>dosa</h2>
+        </div>
+        <div class="brandoptions-common m5"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617188103.png?output-format=webp"
+                alt="">
+            <h2>dosa</h2>
+        </div>
+        <div class="brandoptions-common m6"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/a2531dc570196c0cd9322814eb010d94_1605102324.png?output-format=webp"
+                alt="">
+            <h2>dosa</h2>
+        </div>
+        </div>
+
+        <!-- food options -->
+
+        <div class="foodoptions">
+            <div class="fooditem">
+                    <img src="https://b.zmtcdn.com/data/pictures/chains/0/22460/045fa3e9db1354d1675baacc778cd33b_o2_featured_v2.jpg" alt="">
+                <h3>Food Title</h3>
+                <h4>4.3⭐</h4>
+                <h5>Chinese,thai</h5>
+                <h6 id="price">200rs for one</h6>
+                <h6 id="time">40min</h6>
+            </div>
+            <div class="fooditem">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/7/20287/08e625335d5ee1de816e8c9d6d3bf25c_o2_featured_v2.jpg" alt="">
+                <h3>Food Title</h3>
+                <h4>4.3⭐</h4>
+                <h5>Chinese,thai</h5>
+                <h6 id="price">200rs for one</h6>
+                <h6 id="time">40min</h6>
+            </div>
+            <div class="fooditem">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/5/20945/5f98aa8317cec38a0371f15a6bf3bd84_o2_featured_v2.jpg"
+                    alt="">
+                <h3>Food Title</h3>
+                <h4>4.3⭐</h4>
+                <h5>Chinese,thai</h5>
+                <h6 id="price">200rs for one</h6>
+                <h6 id="time">40min</h6>
+            </div>
+                   </div>
+
+                <div class="foodoptions">
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/7/20797/7c440b99b4140cce88505e64bb690b0f_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/4/19068604/4de4976b95304b9835eb76258a683e77_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/6/21576/89d036bc4157a5dcad9b29b952716529_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                </div>
+                <div class="foodoptions">
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/4/25234/19840ba6ecc1fcf8a9358f5572e31cad_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/7/23557/07a9c9e275e5f53a821958fb16a9723a_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/2/19418342/2a1d62b543591043a7d640f464811427_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                </div>
+                <div class="foodoptions">
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/3/18767033/b59547faeafbbe4e3fc803be7fefd781_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/6/21146/63e4b8b51e15f50434b9f85cdb6aac10_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/5/18573295/bd6d35499c5fb33bea73c32bbf4b0237_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    
+                </div>
+                <div class="foodoptions">
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/1/19204631/dd661fb9423df806572a66f389ad3644_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/6/20976/ec37a79363ae4ea88c3be9ccd7989873_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/2/23342/0c7c32283ac42ed30892e11e452bcadf_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                </div>
+                <div class="foodoptions">
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/9/19602669/8d880981302bd6da7945a0a0b38f4972_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/9/19359209/1e4be0b5e0f970aef41328752d9c4bc1_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                    <div class="fooditem">
+                        <img src="https://b.zmtcdn.com/data/pictures/7/20402527/fb51be136899361035848019b857beb7_o2_featured_v2.jpg"
+                            alt="">
+                        <h3>Food Title</h3>
+                        <h4>4.3⭐</h4>
+                        <h5>Chinese,thai</h5>
+                        <h6 id="price">200rs for one</h6>
+                        <h6 id="time">40min</h6>
+                    </div>
+                </div>
+
+                <div class="topbutton">
+                    <a href="" target="_top">^</a>
+                </div>
+
+                <div class="footer">
+                    <div class="footerhead">
+                        <h1>ZOMATO</h1>
+                        <button>indian</button> <button>language</button></div>
+                    <div class="specialdiv">
+                        <div class="sd subdiv1">
+                            <ul>
+                                <li><h2>about zomato</h2></li>
+                                <li>Who we are</li>
+                                <li>Blog</li>
+                                <li>Work with Us</li>
+                                <li>Investor Relations</li>
+                                <li>report fraud</li>
+                                <li>press Kit</li>
+                                <li>Contact Us</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="sd subdiv2">
+                            <ul>
+                                <li><h2>zomatoverse</h2></li>
+                                <li>zomato</li>
+                                <li>Blinkit</li>
+                                <li>feeding India</li>
+                                <li>Hyperpure</li>
+                                <li>zomaland</li>
+                            </ul>
+                        </div>
+                        <div class="sd subdiv3">
+                            <ul>
+                                    <li><h2>Restaurants</h2></li>
+                                    <li>partner with us</li>
+                                    <li>Apps for you</li>
+                                    <br>
+                                    <li><h4>FOR ENTERPRISES</h2></li>
+                                    <li>Zomato For Enterprises</li>
+                                    <li>hyd</li>
+                            </ul>
+                        </div>
+                        <div class="sd subdiv4">
+                            <ul>
+                                <li>
+                                    <h2>SOCIAL LINKS</h2>
+                                
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subdiv5">
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+                   
+                
+</body>
+</html>
